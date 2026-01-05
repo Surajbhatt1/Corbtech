@@ -564,17 +564,18 @@
   backdrop-filter: blur(14px);
 }
 
-.btn-secondary:hover {
+.btn-secondary:hover 
+{
   background: rgba(56, 189, 248, 0.12);
   transform: translateY(-3px);
-  border-color: #38bdf8;+
+  border-color: #38bdf8;
 }
 
 
 
 
 
-.
+
 
 
 
