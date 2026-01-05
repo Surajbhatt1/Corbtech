@@ -1,0 +1,345 @@
+.about-page {
+  font-family: 'Poppins', sans-serif;
+  color: #1e293b;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.highlight {
+  color: #3a86ff;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+/* HEADER */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  color: #64748b;
+  margin-top: 10px;
+}
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #3a86ff, #8338ec);
+  margin: 14px auto 0;
+  border-radius: 2px;
+}
+
+/* HERO */
+/* .about-hero {
+  background: radial-gradient(circle at top left, #3a86ff, #020617 65%);
+  padding: 8rem 0;
+  color: #fff;
+}
+
+.about-hero-content {
+  max-width: 900px;
+  margin: auto;
+  padding: 3rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  border-radius: 22px;
+}
+
+.about-hero h1 {
+  font-size: 3.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  margin-top: 20px;
+} */
+
+
+/* HERO */
+.about-hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top left, #3a86ff, #020617 65%);
+  overflow: hidden;
+  color: #fff;
+}
+
+/* Overlay grid texture */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.15;
+}
+
+/* Content glass card */
+.about-hero-content {
+  position: relative;
+  max-width: 900px;
+  padding: 4rem 3rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border-radius: 28px;
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 40px 120px rgba(0,0,0,0.4);
+  z-index: 2;
+}
+
+/* Heading */
+.about-hero h1 {
+  font-size: clamp(2.5rem, 5vw, 3.8rem);
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+/* Subtitle */
+.hero-subtitle {
+  font-size: 1.35rem;
+  line-height: 1.7;
+  color: #e5e7eb;
+  max-width: 760px;
+  margin: 0 auto 2.5rem;
+}
+
+/* CTA buttons */
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Glow effects */
+.hero-glow {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, #3a86ff, transparent 70%);
+  filter: blur(120px);
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.hero-glow.left {
+  top: 10%;
+  left: 5%;
+}
+
+.hero-glow.right {
+  bottom: 15%;
+  right: 8%;
+}
+
+/* Buttons */
+.btn {
+  padding: 14px 34px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #3a86ff, #8338ec);
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(58,134,255,0.4);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.4);
+  color: #fff;
+}
+
+.btn-outline:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-hero-content {
+    padding: 3rem 1.8rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 260px;
+  }
+}
+
+
+/* STORY */
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.story-image {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
+}
+
+.story-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/* TEAM */
+.about-team {
+  background: #f8fafc;
+}
+
+.team-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.team-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.team-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3a86ff, #8338ec);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin: auto;
+}
+
+.role {
+  color: #64748b;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.social-links a {
+  color: #475569;
+}
+
+/* VALUES */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.value-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+}
+
+.value-icon {
+  font-size: 1.6rem;
+  color: #3a86ff;
+}
+
+/* CTA */
+.cta-section {
+  background: #020617;
+  color: #fff;
+  text-align: center;
+}
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #3a86ff;
+  color: #fff;
+}
+
+.btn-outline {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+
+
+/* Center last team card when odd count */
+.team-cards {
+  justify-items: center;
+}
+
+.team-card {
+  width: 100%;
+  max-width: 280px;
+}
+
+/* If only one card is in the last row, center it */
+.team-cards > :last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
